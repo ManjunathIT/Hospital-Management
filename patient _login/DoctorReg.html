@@ -1,0 +1,131 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCTOR sign-up</title>
+   
+       
+       
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assetes/DOCsignup.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('img1.png');
+            background-size: cover;
+            height: 100vh;
+            background-position: center;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="date"] {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button[class="btn"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <div class="back">
+                <a href="./index.html"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i> Back</a>
+            </div>
+            <h1>Good to have you doctor!</h1>
+            <p>We need some information about you</p>
+        </div>
+        <div class="docsign">
+            
+            <div class="signupform">
+                <form action="connect1.php" method="post">
+                    <div class="field input">
+                        <label for="Name">Name</label>
+                        <input type="text" name="Name" id="Name"  required>
+                        <div>
+                        <span>
+                            <label for="gender"><input type="radio" class="male" name="gender" value="male">male
+                            <input type="radio" class="female" name="gender" value="female">female</label><br>
+                        </span>
+                        <div class="field input">
+                        <label for="age">age</label><br>
+                        <input type="number" name="age" id="age"  required>
+                        </div>
+                        <div class="field input">
+                        <label for="Username">Username</label>
+                        <input type="text" name="Username" id="Username"  required>
+                         </div>
+                        <div class="field input">
+                        <label for="EmailID">EmailID</label>
+                        <input type="text" name="EmailID" id="EmailID" required>
+                        </div>
+                        <div class="field input">
+                        <label for="Password">Password</label>
+                        <input type="text" name="Password" id="Password"  required>
+                        </div>
+                        <div class="field input">
+                        <label for="ConfirmPassword">ConfirmPassword</label>
+                        <input type="text" name="ConfirmPassword" id="ConfirmPassword"  required>
+                        </div>
+                        <div class="field input">
+                        <label for="PhoneNumber">PhoneNumber</label>
+                        <input type="text" name="PhoneNumber" id="PhoneNumber" required>
+                         </div>
+                        <div class="field input">
+                        <label for="WorkExperience">WorkExperience</label><br>
+                        <input type="number" name="WorkExperience" id="WorkExperience"  required>
+                        </div>
+                        <div class="field input">
+                        <label for="Hospitalyouarecurrentlyworkingin">Hospitalyouarecurrentlyworkingin</label>
+                        <input type="text" name="Hospitalyouarecurrentlyworkingin" id="Hospitalyouarecurrentlyworkingin"  required>
+                        </div>
+                        <div class="field input">
+                        <label for="YourSpecialization">YourSpecialization</label>
+                        <input type="text" name="YourSpecialization" id="YourSpecialization"  required>
+                        </div>
+                        <div class="field input">
+                            <label for="Nameofthecollageyoustudied">Nameofthecollageyoustudied</label>
+                            <input type="text" name="Nameofthecollageyoustudied" id="Nameofthecollageyoustudied"  required>
+                        </div>
+                        <div class="links">
+                            <input type="submit" class="btn" name="submit" value="submit" required>
+                            Already a member? <a href="Doctorlogin.html">Sign In</a>
+                         
+                         </div>
+
+                    </form>
+                </div>
+            </div>
+           
+           
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

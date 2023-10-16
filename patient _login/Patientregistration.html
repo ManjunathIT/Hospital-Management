@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('img1.png');
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+    }
+    .container {
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 2px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-group {
+        margin-bottom: 10px;
+        
+    }
+    label {
+        font-weight: bold;
+    }
+    field input[type="submit"], input[type="number"], input[type="text"] {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    button[class="field"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-left: 35%;
+    }
+</style>
+</head>
+<body>
+        
+    <div class="container">
+        <div class="heading">
+            <div class="back">
+                <a href="./index.html"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i> Back</a>
+            </div>
+    <div class="col-8">
+        <div style="margin-top: 25px;">
+            <center>
+                <img src="patientregistrationimage.png"  width: 50px;>
+                <br><br>
+                <h5>Patient Registration page</h5>
+               
+            </center>
+
+    <div class="container">
+        <div class="box form-box">
+            <center>
+            <header>Sign Up</header> 
+        </center>
+        <form action="connect.php" method="post">
+           
+            
+            <div class="field input">
+            <center>
+                <label for="Firstname">Firstname</label>
+                <input type="text" name="Firstname" id="Firstname" required >
+            </center>
+            </div>
+           
+            <div class="field input">
+                <center>
+                <label for="Lastname">Lastname</label>
+                <input type="text" name="Lastname" id="Lastname" required>
+                </center>
+            </div>
+                <center>
+                <div class="field input">
+                    <label for="Username">Username</label>
+                    <input type="text" name="Username" id="Username" autocomplete="off" required>
+                </center>
+                </div>
+                <center>
+                <div class="field input">
+                    <label for="email">email</label>
+                    <input type="text" name="email" id="email" autocomplete="off" required>
+                </center>
+                </div>
+                <center>
+                <div class="field input">
+                    <label for="phoneNumber">phoneNumber</label>
+                    <input type="text" id="phoneNumber" name="phoneNumber" required>
+                   </center>
+                </div>
+                <center>
+                <div class="field input">
+                    <label for="age">age</label>
+                    <input type="number" name="age" id="age" autocomplete="off" required>
+                </center>
+                </div>
+                 <center>
+                <div class="field input">
+                    <label for="Password">Password</label>
+                    <input type="text" name="Password" id="Password" autocomplete="off" required>
+                    <div class="field input">
+                        <label for="password">Confirmpassword</label>
+                        <input type="text" name="Confirmpassword" id="Confirmpassword" autocomplete="off" required>   
+                    </center>
+                    </div>
+                    <center>
+                <div class="field">
+                    
+                    <input type="submit" class="btn" name="submit" value="submit" required>
+                </center>
+                </div>
+                <center>
+                <div class="links">
+                   Already a member? <a href="Patientlogin.html">Sign In</a>
+                </center>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+</body>
+</html>

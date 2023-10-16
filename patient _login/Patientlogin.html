@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="./assetes/patlogin.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>PATIENT Login</title>
+  
+		<style>
+			/* Custom CSS styles can be added here */
+			body {
+				font-family: Arial, sans-serif;
+				background-image: url('img1.png');
+				background-size: cover;
+				height: 100vh;
+				background-position: center;
+			}
+			
+			.form-group {
+				margin-bottom: 20px;
+			}
+			label {
+				font-weight: bold;
+			}
+			 input[type="Email"]{
+				width: 50%;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 3px;
+			}
+			input[type="Password"] {
+				width: 50%;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 3px;
+			}
+			button[type="Submit"] {
+				background-color: #007bff;
+				color: #ffffff;
+				padding: 10px 20px;
+				border: none;
+				border-radius: 8px;
+				cursor: pointer;
+			}
+		</style>
+</head>
+<body>
+	<div class="container" id="container">
+		<div class="form-container log-in-container">
+            <div class="back">
+				<a href="./index.html"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i> Back</a>
+			</div>
+			<form action="#">
+				<h1>Login</h1>
+				<div class="social-container">
+					<a href="https://www.facebook.com/" ><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+					<a href="https://twitter.com/login?lang=en" ><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+				</div>
+				<span>or use your account</span><br>
+				<input type="Email" placeholder="Email" />
+				<input type="Password" placeholder="Password" />
+				<a href="#">Forgot your password?</a>
+				<button>Submit</button>
+				<div>
+					Don't have an account,
+					<a href="Patientregistration.html"
+					class="link-blue">click here</a>
+					 for registration.
+				</div>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-right">
+					<h1>Welcome mate!</h1>
+					<p></p>
+                   
+				</div>
+			</div>
+		</div>
+	</div>
+    <Script>
+        function validateLogin()
+        {
+            var username = document.getElementById('username').value
+            var password = document.getElementById('password').value
+
+            if(username == '')
+            {
+                document.getElementById('errmsg').innerHTML = 'Please Enter Name'
+                return false
+            }
+
+            if(password == '')
+            {
+                document.getElementById('errmsg').innerHTML = 'Please Enter Password'
+                return false
+            }
+        }
+
+        
+
+    </Script>
+        
+</body>
+</html>
